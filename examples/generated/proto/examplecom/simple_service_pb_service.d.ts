@@ -121,9 +121,9 @@ export class SimpleServicePromisesClient {
   constructor(serviceHost: string, options?: grpc.RpcOptions);
   doUnary(
     requestMessage: proto_examplecom_simple_service_pb.UnaryRequest,
-  ): Promise<proto_othercom_external_child_message_pb.ExternalChildMessage>;
+  ): Promise<proto_othercom_external_child_message_pb.ExternalChildMessage.AsObject>;
   delete(
     requestMessage: proto_examplecom_simple_service_pb.UnaryRequest,
-  ): Promise<proto_examplecom_simple_service_pb.UnaryResponse>;
+  ): Promise<proto_examplecom_simple_service_pb.UnaryResponse.AsObject>;
 }
 

@@ -78,6 +78,6 @@ export class OrphanServicePromisesClient {
   constructor(serviceHost: string, options?: grpc.RpcOptions);
   doUnary(
     requestMessage: proto_orphan_pb.OrphanUnaryRequest,
-  ): Promise<proto_orphan_pb.OrphanMessage>;
+  ): Promise<proto_orphan_pb.OrphanMessage.AsObject>;
 }
 

@@ -263,7 +263,7 @@ SimpleServicePromisesClient.prototype.doUnary = function doUnary(requestMessage)
       if (error !== null) {
         reject(error);
       } else {
-        resolve(responseMessage);
+        resolve(responseMessage.toObject());
       }
     });
   });
@@ -279,7 +279,7 @@ SimpleServicePromisesClient.prototype.delete = function pb_delete(requestMessage
       if (error !== null) {
         reject(error);
       } else {
-        resolve(responseMessage);
+        resolve(responseMessage.toObject());
       }
     });
   });

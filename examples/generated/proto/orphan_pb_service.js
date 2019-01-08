@@ -117,7 +117,7 @@ OrphanServicePromisesClient.prototype.doUnary = function doUnary(requestMessage)
       if (error !== null) {
         reject(error);
       } else {
-        resolve(responseMessage);
+        resolve(responseMessage.toObject());
       }
     });
   });
