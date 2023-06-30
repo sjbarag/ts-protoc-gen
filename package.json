@@ -13,6 +13,7 @@
     "test:integration": "./test/mocha-run-suite.sh 'test/integration/**/*.ts'",
     "prepublishOnly": "npm run build"
   },
+  "main": "lib/index.js",
   "bin": {
     "protoc-gen-ts": "bin/protoc-gen-ts"
   },
